@@ -1,5 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  padding: 20px;
+  min-height: 100%;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +14,77 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid rgb(63, 63, 63);
+}
+
+.nav__item {
+  margin-right: 15px;
+  font-size: 22px;
+}
+
+.container {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+
+.countries {
+  display: flex;
+  flex-direction: column;
+}
+
+.country__item {
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+}
+
+.img {
+  width: 320px;
+  height: 320px;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: rgb(46, 107, 221);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(8, 70, 185);
+}
+
+.row {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
